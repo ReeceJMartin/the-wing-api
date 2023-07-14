@@ -1,12 +1,9 @@
 from setuptools import setup
 
 setup(
-    name='the-wing-api',
-    packages=['the-wing-api'],
-    version='0.0.1',
+    name="wing_api",
+    packages=["wing_api", "wing_api.resources"],
+    version="0.0.1",
     include_package_data=True,
-    install_requires=[
-        'flask',
-        'flask_restful'
-    ],
+    install_requires=["flask", "flask_restful"],
 )
