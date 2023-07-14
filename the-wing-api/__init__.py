@@ -7,4 +7,9 @@ api = Api(app)
 
 api.add_resource(Greeting, '/greeting')
 
-app.run(host='0.0.0.0', port=5001)
+
+#Uncomment to use in Dev
+#app.run(host='0.0.0.0', port=5001)
+
+#Source to activate the venv
+#gunicorn -w 4 'the-wing-api:app' used run the application with gunicorn

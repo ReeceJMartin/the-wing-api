@@ -1,5 +1,8 @@
 import flask
 from flask_restful import Resource, Api, reqparse
+import datetime
+#import sys
+
 
 
 class Greeting(Resource):
@@ -30,7 +33,12 @@ class Greeting(Resource):
 
         file.close()
 
-        inputJSON = {'input': args["input"]}
+
+        # Make this more lightweight.
+        time=datetime.datetime.now()
+
+        inputJSON = {'input': [args["input"]], 'time': [str(time)]}
+
 
         return inputJSON, 200
 
