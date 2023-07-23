@@ -5,5 +5,5 @@ setup(
     packages=["wing_api", "wing_api.resources"],
     version="0.0.1",
     include_package_data=True,
-    install_requires=["flask", "flask_restful"],
+    install_requires=["fastapi"],
 )
